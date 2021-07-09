@@ -38,7 +38,7 @@ To encode the texts, we use the 768-dimensional embedding obtained per news item
 To extract the timestamp input for time-aware LSTM, we obtain the time interval (in minutes) between the release of two consecutive texts and compute its inverse.
 Kindly refer the [paper](https://aclanthology.org/2021.naacl-main.316.pdf) for further pre-processing details and the model training setup.
 
-Prepare two sepearte .pkl files, one for training and one for testing data, containing data processed as follows. Each data point should comprise values corresponding to the following keys for the set of stocks during the lookback window:
+Prepare two separate .pkl files, one for training and one for testing data, containing data processed as follows. Each data point should comprise values corresponding to the following keys for the set of stocks during the lookback window:
 
 'dates' -> Dates (list) corresponding to the days in the lag window
 
